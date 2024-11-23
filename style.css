@@ -14,3 +14,83 @@ nav {
 section {
     padding: 4rem 0;
 }
+
+<!--about--/>
+#about img {
+    max-width: 80%;
+    border: 5px solid #f8f9fa;
+    transition: transform 0.3s ease;
+}
+
+#about img:hover {
+    transform: scale(1.05);
+}
+
+#about h1 {
+    font-size: 2.5rem;
+}
+
+#about .badge {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 20px;
+}
+
+
+#home {
+    text-align: center;
+    background: url('images/./banner.jpg') no-repeat center center/cover;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+section {
+    padding: 4rem 0;
+}
+
+.bg-dark {
+    background-color: #333;
+}
+
+contact
+#contact {
+    background-color: #f8f9fa;
+}
+
+#contact h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+#contact .btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+#contact .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+ footer
+
+footer {
+    background-color: #333;
+    color: #fff;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #007bff;
+}
