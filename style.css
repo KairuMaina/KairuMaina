@@ -1,125 +1,83 @@
-{
-    font-family: century ,sans-serif;
-    line-height: 1.6;
-}
-
-/* Body and Navbar */
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
+    background-color: black; /* Set the background color of the page to black */
+    color: white; /* Set default text color to white for readability */
 }
-
-nav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-}
-
-/* Home Section */
-#home {
-    background: url('images/Sentinel\ Richplus\ Web\ Solutions\(1\).png') no-repeat center center/cover;
-    height: 100vh;
-    position: relative;
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-/* Navbar transparency */
-nav {
-    background-color: transparent !important;
-    box-shadow: none !important;
-    border: none !important;
-}
-
-/* Styling for text and elements inside home section */
-#home h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-#home p {
-    font-size: 1.2rem;
-    font-weight: 300;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-}
-
 
 h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    color: white; /* Ensure header text color is white */
 }
 
+h1, h2, h3, h4, h5, h6, p, a, li {
+    color: white !important; /* Ensure all text elements are white */
+}
+
+/* Navbar */
 nav {
     position: sticky;
     top: 0;
     z-index: 1000;
+    background-color: black !important; /* Set navbar background color */
+    color: white; /* Set navbar text color */
 }
 
-section {
-    padding: 4rem 0;
+.navbar {
+    background-color: #black !important; /* Set background color */
+    color: white; /* Set navbar text color to white */
 }
 
 /* Home Section */
 #home {
-    background: url('images/banner.jpg') no-repeat center center/cover;
     height: 100vh;
-    padding: 0;
     display: flex;
     align-items: center;
+    padding: 0;
+    text-align: center;
+    background-color: transparent; /* Inherit black background from body */
 }
 
-/* Styling for text and elements inside home section */
 #home h1 {
     font-size: 3rem;
     font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    line-height: 1.2; /* Ensures spacing between the split lines */
-    text-align: right; /* Aligns text to the right */
+    color: white; /* Set home section header color to white */
 }
 
 #home p {
     font-size: 1.2rem;
     font-weight: 300;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-    text-align: right; /* Aligns text to the right */
+    color: white; /* Ensure text color is white */
 }
 
-/* Styling for the "Learn More" button */
 #home .btn-primary {
-    background-color: #1E90FF;
+    background-color: orange; /* Set button color to orange */
     border: none;
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
     text-transform: uppercase;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-    margin-top: 1.5rem; /* Adds spacing above the button */
-    float: right; /* Aligns button to the right */
+    margin-top: 1.5rem;
 }
 
 #home .btn-primary:hover {
-    background-color: #0056b3;
+    background-color: #FFA500; /* Change to orange-yellow on hover */
     text-decoration: none;
-    color: #fff;
+    color: white;
 }
-
 
 /* About Section */
-#about img {
-    max-width: 80%;
-    border: 5px solid #f8f9fa;
-    transition: transform 0.3s ease;
-}
-
-#about img:hover {
-    transform: scale(1.05);
+#about {
+    background-color: transparent; /* Inherit black background from body */
+    color: white; /* Set text color to white */
 }
 
 #about h1 {
     font-size: 2.5rem;
+    color: white; /* Set header text color to white */
 }
 
 #about .badge {
@@ -128,60 +86,47 @@ section {
     border-radius: 20px;
 }
 
-/* Home Section */
-#home {
-    text-align: center;
-    background: url('images/Sentinel\ Richplus\ Web\ Solutions\(1\).png') no-repeat center center/cover;
-}
-
-/* Dark Background */
-.bg-dark {
-    background-color: #333;
-}
-
 /* Contact Section */
 #contact {
-    background-color: #f8f9fa;
+    background-color: transparent; /* Inherit black background from body */
+    color: white; /* Set text color to white */
 }
 
 #contact h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
-}
-
-#contact form {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 2rem;
+    color: white; /* Ensure header text color is white */
 }
 
 #contact .btn-primary {
-    background-color: #007bff;
+    background-color: orange; /* Set button color to orange */
     border: none;
 }
 
 #contact .btn-primary:hover {
-    background-color: #0056b3;
+    background-color: #FFA500; /* Change to orange-yellow on hover */
+    color: white;
 }
-
-#contact {
-    background-image: url('images/Sentinel\ Richplus\ Web\ Solutions\(2\).png');
-    background-size: cover;  /* Makes sure the image covers the section */
-    background-position: center; /* Centers the background image */
-}
-
 
 /* Footer */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: black; /* Inherit black background from body */
+    color: white; /* Set text color to white */
     padding: 2rem 0;
 }
 
 footer a {
     text-decoration: none;
+    color: white; /* Ensure link color is white */
 }
 
 footer a:hover {
-    color: #007bff;
+    color: #FFA500; /* Change link color on hover */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #home .col-md-8 {
+        text-align: center;
+    }
 }
