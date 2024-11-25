@@ -130,3 +130,46 @@ footer a:hover {
         text-align: center;
     }
 }
+
+
+/* Override button text color */
+.card-body a {
+    color: orange !important; /* Keep buttons orange */
+}
+
+/* Override muted text color */
+.text-muted {
+    color: gray !important; /* Keep muted text gray */
+}
+
+
+/* My Projects Section */
+#projects {
+    background-color: black; /* Set background to black */
+    color: white; /* Ensure text is readable on a black background */
+    padding: 3rem 0; /* Add some padding for better spacing */
+}
+
+/* Card Styling */
+#projects .card {
+    background-color: #222; /* Slightly lighter black for cards */
+    color: white; /* Ensure text on cards is white */
+    border: none; /* Remove card border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+}
+
+#projects .card:hover {
+    transform: scale(1.03); /* Slight zoom effect on hover */
+    transition: transform 0.3s ease;
+}
+
+/* Button Styling in My Projects Section */
+#projects .btn-outline-primary {
+    color: orange; /* Set button text color */
+    border-color: orange; /* Set button border color */
+}
+
+#projects .btn-outline-primary:hover {
+    background-color: orange; /* Change background to orange on hover */
+    color: black; /* Change text color to black */
+}
